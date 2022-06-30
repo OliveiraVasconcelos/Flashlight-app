@@ -11,7 +11,6 @@ const App = () => {
   useEffect(()=> {
    Torch.switchState(toggle);
   }, [toggle]);
-
   useEffect(()=> {
     const subscription = RNShake.addListener(()=>{
       setToggle(oldToggle => !oldToggle);
